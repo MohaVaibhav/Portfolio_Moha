@@ -10,35 +10,7 @@
     <link rel="" href="">
     <link rel="stylesheet" href="index.css">
     <style>
-        body {
-            background-color: rgb(136, 136, 136);
-        }
-
-        .form-div {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px;
-            margin-top: 70px;
-            font-weight: bold;
-            font-size: 18px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-
-        form {
-            /* background-color: rgb(130, 130, 133); */
-            background-image: linear-gradient( rgba(36, 30, 218, 0.749),rgb(66, 14, 130));
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-            border-radius: 10px;
-            box-shadow: 4px 4px 4px black;
-            width: 30vw;
-        }
-        form input{
-            line-height: 28px;
-        }
+     
     </style>
 </head>
 
@@ -71,9 +43,10 @@
             <img src="{% static 'instagram-removebg-preview (1).png' %}" alt="instagram">
             <img src="{% static 'twitter-removebg-preview.png' %}" alt="twitter">
         </div> -->
+        <div class="progress"></div>
     </div>
     <div class="form-div">
-        <form action="">
+        <!-- <form action="">
             <h3>To contact me</h3>
             <label for="name">Full name :</label>
             <input type="text" name="name" id="name" placeholder="Enter your full name">
@@ -85,7 +58,94 @@
             <label for="msg">Message for me:</label>
             <textarea name="msg" id="msg" placeholder="please write your message for me"></textarea>
             <input type="button" value="submit">
-        </form>
+        </form> -->
+        <div class="main_text">
+            <div class="sub_txt">
+                <h2 style="line-height: 49px; color: #02ff5f;">
+                    Contact Me
+                </h2>
+                <h3 style="line-height: 29px;">
+                    Thank you for viewing my portfolio.<br>
+                    I really hope you've enjoyed looking at my work!
+                </h3>
+                <br>
+                <span>
+                    Whether you're a new business looking to launch your brand into the world or large.established
+                    business, I'm happy to your
+                    needs. i understand that every company, big or small, has different needs and requirements.
+                    Therefore, every job is be treated accordingly.
+                    If you are a new bussiness or individual and don't know where to start, that's fine too! I'm more
+                    than happy to give advice and point
+                    your in the right direction.
+                </span>
+            </div>
+            <div class="sub_txt" style="border: 2px dashed rgb(109, 164, 241); padding: 8px;">
+                I'm currently available for freelance work so feel free to contact me using the social midia below
+                <br>
+                <br>
+                I'will get kack to you quickly - within 24 hours on business days.
+            </div>
+        </div>
+    </div>
+    <div class="main_text2 add_style">
+        <div class="sub_txt" style="border: 1px solid gray;">
+            <div class="form_header">
+                Get in touch with me:
+            </div>
+            <div class="form_div" style="color: black; padding: 10px;line-height: 20px;">
+                Average response time is within 24 hours. Don't think you'll send an email with no response... I'm here
+                to help!
+                <br>
+                <br>
+                <form action="">
+                    <span>
+                        <label for="name">Name<span style="color: red;">*</span></label>
+                        <input type="text" id="name" required>
+                    </span>
+                    <span>
+                        <label for="email">Email<span style="color: red;">*</span></label>
+                        <input type="email" id="email" required>
+                    </span>
+                    <span>
+                        <label for="number">Contact Number<span style="color: red;">*</span></label>
+                        <input type="number" id="number" required ma>
+                    </span>
+                    <span>
+                        <label for="msg">Message for me:</label>
+                        <textarea name="msg" id="msg" placeholder="please write your message for me"></textarea>
+                    </span>
+                    <span>
+                        <button>Submit</button>
+                    </span>
+                </form>
+            </div>
+        </div>
+        <div class="sub_txt con_txt">
+            <div>
+                <h3>Email</h3>
+                <br>
+                <span>
+                    My proferred method of project disussion is via email. Please complete the form on this page to send
+                    mo through an enquiry. Alternatively, you can send me an email at: bagekariv@gmail.com
+                </span>
+            </div>
+            <div>
+                <h3>Phone</h3>
+                <br>
+                <span>
+                    Whilst my preferred method of communication is via email, I'm happy to discuss projects with you
+                    over the phone-send me an email and I'll get in touch! 9970278039
+                </span>
+            </div>
+            <div>
+                <h3>linkedin</h3>
+                <br>
+                <span>
+                    If you wish to contact me via Skype regarding a project, feel free to add me: <a
+                        href="https://www.linkedin.com/in/vaibhav-bagekari-008b42253/">https://www.linkedin.com/in/vaibhav-bagekari-008b42253/</a>
+                </span>
+            </div>
+        </div>
     </div>
     <footer class="footer_container">
         <div class="f_div">

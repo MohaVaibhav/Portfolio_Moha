@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="index.css">
     <style>
-       
+       .graph{
+        margin: 15px;
+       }
     </style>
     <!-- <link rel="stylesheet" href="{% static 'index.html' %}"> -->
 </head>
@@ -45,6 +47,7 @@
             <img src="{% static 'instagram-removebg-preview (1).png' %}" alt="instagram">
             <img src="{% static 'twitter-removebg-preview.png' %}" alt="twitter">
         </div> -->
+        <div class="progress"></div>
     </div>
     
     <div class="main-bg">
@@ -63,17 +66,17 @@
         <div class="btn-div">
 
            <a href="about.html" class="btn">Resume</a>
-           <a href="" class="btn">GitHub</a>
+           <a href="https://github.com/vaibhavbagekari" target="_blank" class="btn">GitHub</a>
             
         </div>
         <div class="social" id="social">
             <li><a href="https://www.facebook.com/" ><i class='bx bxl-facebook'></i></a></li>
-            <li><a href="https://instagram.com/__its_suraj07?igshid=OGQ5ZDc2ODk2ZA=="><i class='bx bxl-instagram'></i></a></li>
+            <li><a href="https://www.instagram.com/?hl=en" target="_blank"><i class='bx bxl-instagram'></i></a></li>
 
             <li><a
-                    href="https://twitter.com/Royalsuraj_07?t=-6gDIoLI4fMof8IC9i_cbw&s=09"><i
+                    href="https://twitter.com/Royalsuraj_07?t=-6gDIoLI4fMof8IC9i_cbw&s=09" target="_blank"><i
                         class='bx bxl-twitter'></i></a></li>
-            <li><a href="https://www.youtube.com/?themeRefresh=1"><i class='bx bxl-youtube'></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCgVDMA0Ah9yv_FFlFE_0nRA"><i class='bx bxl-youtube'></i></a></li>
         </div>
             <p id="element"></p>
 
@@ -90,6 +93,41 @@
             </h2>
         </div>
     </div> -->
+    <script>
+        window.onload = function () {
+        
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            theme: "light2", // "light1", "light2", "dark1", "dark2"
+            title: {
+                text: "Technologies"
+            },
+            axisY: {
+                title: "Growth Rate (in %)",
+                suffix: "%"
+            },
+            axisX: {
+                title: "Programming languages"
+            },
+            data: [{
+                type: "column",
+                yValueFormatString: "#,##0.0#\"%\"",
+                dataPoints: [
+                    { label: "HTML", y: 7.1 },	
+                    { label: "CSS", y: 6.70 },	
+                    { label: "Python", y: 5.00 },
+                    { label: "Javs", y: 4.50 }
+                ]
+            }]
+        });
+        chart.render();
+        
+        }
+        </script>
+        
+        <div id="chartContainer" style="height: 300px; width: 100%;" class="graph"></div>
+        <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+           
     <footer class="footer_container">
         <div class="f_div">
             <img src="Premium Vector _ Abstract b or vb logo.jpeg"
@@ -125,4 +163,5 @@
       typeSpeed: 50,
     });
   </script>
+  
 </html>

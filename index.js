@@ -5,6 +5,7 @@ function ToggleEvent() {
     var obj2=document.getElementById("overlay");
     if (obj2.style.display === "none"){
         obj2.style.display = "block";
+        
     }
     else{
         obj2.style.display = "none";
